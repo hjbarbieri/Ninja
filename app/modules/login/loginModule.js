@@ -1,0 +1,1 @@
+angular.module('loginModule',['initialApp.login.controllers']);

@@ -5,11 +5,13 @@ exports.config = {
     '*.js'
   ],
 
+
   capabilities: {
+
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://localhost:8000/app/',
+  baseUrl: 'http://localhost:5000/app/',
 
   framework: 'jasmine',
 
@@ -17,3 +19,5 @@ exports.config = {
     defaultTimeoutInterval: 30000
   }
 };
+
+
