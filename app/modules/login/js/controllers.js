@@ -1,1 +1,0 @@
-angular.module('initialApp.login.controllers',[]);
