@@ -13,11 +13,21 @@
 
 </head>
 <body>
+  <div class="btn-group btn-toggle">
+<button class="btn btn-xs btn-default" ng-class="{en:'active'}[languagePreference.currentLanguage]" 
+    ng-click="languagePreference.switchLanguage('en')" >
+    English
+</button>
+<button class="btn btn-xs btn-primary" ng-class="{de:'active'}[languagePreference.currentLanguage]"
+    ng-click="languagePreference.switchLanguage('de')">
+    German
+  </button>
+</div>
   <div class="container">
     <br/>
     <div class="jumbotron text-center">
-        <h1>The Single Page Blogger</h1>
-        <p>One stop blogging solution</p>
+       <h1>{{'TITLE' | translate}}</h1>
+      <p>{{'SUBTITLE' | translate}}</p>
     </div>
     <div ui-view></div>
     <div class="row footer">
@@ -32,6 +42,7 @@
 <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"> </script>
   <script src="bower_components/angular-resource/angular-resource.js"> </script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
   <script src="js/app.js"></script>
   <script src="modules/posts/postModule.js"></script>
   <script src="modules/posts/js/controllers.js"></script>
