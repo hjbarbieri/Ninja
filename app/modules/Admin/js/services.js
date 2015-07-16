@@ -2,7 +2,7 @@
 				
 angular.module('spBlogger.admin.services',[]).factory('Post', 
 	['$resource','API_ENDPOINT',function($resource,API_ENDPOINT){
-    return $resource(API_ENDPOINT, { id: '@_id' }, {
+    return $resource(API_ENDPOINT, { id: '@id' }, {
         update: {
             method: 'PUT'
         }
@@ -11,4 +11,4 @@ angular.module('spBlogger.admin.services',[]).factory('Post',
     this.showPopup=function(message){
         return $window.confirm(message); //Ask the users if they really want to delete the post entry 
     }
-}]).value('API_ENDPOINT','http://localhost:5500/posts/:id'); // This is our end point
+}]).value('API_ENDPOINT','http://localhost:5400/posts/:id'); // This is our end point
