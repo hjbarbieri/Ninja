@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
   <base href="/">
   <title>The Single Page Blogger</title>
+  <!-- build:css app/built/app.min.css -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="modules/posts/css/posts.css">
+  <!-- endbuild -->
   
 
 </head>
@@ -25,6 +27,8 @@
     </div>
   </div>
 </body>
+
+<!-- build:js app/built/app.min.js -->
 <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"> </script>
   <script src="bower_components/angular-resource/angular-resource.js"> </script>
@@ -39,4 +43,6 @@
   <script src="modules/admin/js/filters.js"></script>
   <script src="modules/admin/js/directives.js"></script>
   <script src="modules/admin/js/services.js"></script>
+<!-- endbuild -->
+
 </html>

@@ -2,6 +2,8 @@
   "name": "initial",
   "description": "A starter project for AngularJS",
   "version": "0.0.0",
+   "proxy": "http://etcjabar:VVVisa.2239@127.0.0.1:3128",
+  "https-proxy": "http://etcjabar:VVVisa.2239@127.0.0.1:3128",
   "homepage": "https://github.com/hjbarbieri/Ninja",
   "license": "MIT",
   "private": true,

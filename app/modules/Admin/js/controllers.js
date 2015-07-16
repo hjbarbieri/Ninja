@@ -7,6 +7,7 @@ angular.module('spBlogger.admin.controllers',[]).controller('AdminController',['
     $scope.savePost=function(){
         $scope.buttonText="Saving. . ."; //Once clicked change button text 
         $scope.post.permalink=angular.lowercase($scope.post.title).replace(/[\s]/g,'-');//generate permalink 
+        $scope.post.comments = [];
         $scope.post.$save(function(){
 		$state.go('admin.postViewAll'); //Once saved go to state `admin.postViewAll`
 	}); 
